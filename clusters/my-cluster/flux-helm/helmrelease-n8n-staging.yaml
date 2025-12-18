@@ -7,18 +7,19 @@ spec:
   chart:
     spec:
       chart: n8n
-      version: 0.0.1
+      version: 0.0.3
       sourceRef:
-        kind: GitRepository
-        name: infra-repo
+        kind: HelmRepository
+        name: bitnami
         namespace: flux-system
+  interval: 1m
   values:
     replicaCount: 1
     image:
       repository: n8nio/n8n
       tag: latest
     database:
-      host: cloudnative-pg.production.svc.cluster.local
+      host: cloudnative-pg.staging.svc.cluster.local
       port: 5432
       user: n8n
       password: n8npass

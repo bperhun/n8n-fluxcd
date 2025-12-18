@@ -5,9 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="743b0734-9dcc-4e44-b65b-3f8139103222" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/clusters/my-cluster/charts/n8n/Chart.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clusters/my-cluster/charts/n8n/templates/deployment.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clusters/my-cluster/flux-helm/helmrepo-bitnami.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clusters/my-cluster/overlays/production/kustomization.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/clusters/my-cluster/overlays/production/kustomization.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clusters/my-cluster/overlays/staging/kustomization.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/clusters/my-cluster/overlays/staging/kustomization.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clusters/my-cluster/flux-helm/helmrelease-n8n-production.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/clusters/my-cluster/flux-helm/helmrelease-n8n-production.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clusters/my-cluster/flux-helm/helmrelease-n8n-staging.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/clusters/my-cluster/flux-helm/helmrelease-n8n-staging.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +58,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/clusters/my-cluster/charts/n8n" />
       <recent name="$PROJECT_DIR$/clusters/my-cluster/overlays" />
       <recent name="$PROJECT_DIR$/clusters/my-cluster/flux-helm" />
       <recent name="$PROJECT_DIR$/clusters/my-cluster/flux-system/helm" />
@@ -77,7 +81,7 @@
       <option name="presentableId" value="Default" />
       <updated>1766053407970</updated>
       <workItem from="1766053409723" duration="1804000" />
-      <workItem from="1766055570848" duration="13866000" />
+      <workItem from="1766055570848" duration="14842000" />
     </task>
     <servers />
   </component>

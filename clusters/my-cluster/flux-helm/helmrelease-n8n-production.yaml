@@ -7,11 +7,12 @@ spec:
   chart:
     spec:
       chart: n8n
-      version: 0.0.1
+      version: 0.0.3
       sourceRef:
-        kind: GitRepository
-        name: infra-repo
+        kind: HelmRepository
+        name: bitnami
         namespace: flux-system
+  interval: 1m
   values:
     replicaCount: 2
     image:
