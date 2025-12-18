@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: n8n
 spec:
-  replicas: {{ .Values.replicaCount }}
+  replicas: { { .Values.replicaCount } }
   selector:
     matchLabels:
       app: n8n
@@ -18,7 +18,7 @@ spec:
           ports:
             - containerPort: 5678
           env:
-            {{- range .Values.env }}
-            - name: {{ .name }}
-              value: {{ .value }}
-            {{- end }}
+          { { - with .Values.env } }
+          { { - toYaml . | nindent 12 } }
+          { { - end } }
+
