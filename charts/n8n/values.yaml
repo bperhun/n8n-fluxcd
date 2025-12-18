@@ -26,4 +26,4 @@ env:
   - name: DB_POSTGRES_PASSWORD
     value: n8npass
   - name: N8N_SECURE_COOKIE
-    value: false
+    value: "false"
