@@ -18,7 +18,6 @@ spec:
           ports:
             - containerPort: 5678
           env:
-          { { - with .Values.env } }
-          { { - toYaml . | nindent 12 } }
-          { { - end } }
-
+            { { - with .Values.env } }
+              { { - toYaml . | nindent 12 } }
+              { { - end } }
