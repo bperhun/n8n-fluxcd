@@ -1,0 +1,325 @@
+{
+  "apiVersion": "kustomize.toolkit.fluxcd.io/v1",
+  "kind": "Kustomization",
+  "metadata": {
+    "annotations": {
+      "reconcile.fluxcd.io/requestedAt": "2025-12-18T14:36:30.182239+02:00"
+    },
+    "creationTimestamp": "2025-12-18T11:04:53Z",
+    "deletionGracePeriodSeconds": 0,
+    "deletionTimestamp": "2025-12-18T13:20:17Z",
+    "finalizers": [],
+    "generation": 2,
+    "labels": {
+      "kustomize.toolkit.fluxcd.io/name": "flux-system",
+      "kustomize.toolkit.fluxcd.io/namespace": "flux-system"
+    },
+    "name": "flux-system",
+    "namespace": "flux-system",
+    "resourceVersion": "11246",
+    "uid": "f48d60fd-e250-4c50-83d6-67ae5ad43bc7"
+  },
+  "spec": {
+    "force": false,
+    "interval": "10m0s",
+    "path": "./clusters/my-cluster",
+    "prune": true,
+    "sourceRef": {
+      "kind": "GitRepository",
+      "name": "flux-system"
+    }
+  },
+  "status": {
+    "conditions": [
+      {
+        "lastTransitionTime": "2025-12-18T13:17:08Z",
+        "message": "Detecting drift for revision main@sha1:1ab483f557253e3ba5a20ab9d1a57cd5c8e34968 with a timeout of 9m30s",
+        "observedGeneration": 1,
+        "reason": "ProgressingWithRetry",
+        "status": "True",
+        "type": "Reconciling"
+      },
+      {
+        "lastTransitionTime": "2025-12-18T13:17:08Z",
+        "message": "HelmRelease/flux-system/cloudnative-pg dry-run failed: no matches for kind \"HelmRelease\" in version \"helm.toolkit.fluxcd.io/v2beta1\"\n",
+        "observedGeneration": 1,
+        "reason": "ReconciliationFailed",
+        "status": "False",
+        "type": "Ready"
+      }
+    ],
+    "history": [
+      {
+        "digest": "sha256:fa7254012e200c6d37afd11216e7c8822e8dc39cf59baf0286ee723c6ef1bd1f",
+        "firstReconciled": "2025-12-18T12:36:49Z",
+        "lastReconciled": "2025-12-18T13:17:08Z",
+        "lastReconciledDuration": "718.050375ms",
+        "lastReconciledStatus": "ReconciliationFailed",
+        "metadata": {
+          "revision": "main@sha1:1ab483f557253e3ba5a20ab9d1a57cd5c8e34968"
+        },
+        "totalReconciliations": 6
+      },
+      {
+        "digest": "sha256:cc918e0c1ac32224151faf565b950ae79818b597b1ab165251f7617dadf1da5a",
+        "firstReconciled": "2025-12-18T12:10:53Z",
+        "lastReconciled": "2025-12-18T12:10:53Z",
+        "lastReconciledDuration": "670.782084ms",
+        "lastReconciledStatus": "ReconciliationFailed",
+        "metadata": {
+          "revision": "main@sha1:1b438fe2e9f31a93674501b309562aa8b0fb6fb7"
+        },
+        "totalReconciliations": 1
+      },
+      {
+        "digest": "sha256:80edc565f307a09e8c0791f0164257961e549e7d195d6cc134dc9fd033e7d15b",
+        "firstReconciled": "2025-12-18T11:58:37Z",
+        "lastReconciled": "2025-12-18T12:04:35Z",
+        "lastReconciledDuration": "504.348876ms",
+        "lastReconciledStatus": "ReconciliationFailed",
+        "metadata": {
+          "revision": "main@sha1:d7a5a8fbf7e201f678b725ba39b3f9ae367206a1"
+        },
+        "totalReconciliations": 2
+      },
+      {
+        "digest": "sha256:90a1eaad9fd3d7c689d6e012253e916b00bb0fd497a9f6b9c9a4bb487da0e8ff",
+        "firstReconciled": "2025-12-18T11:56:32Z",
+        "lastReconciled": "2025-12-18T11:56:32Z",
+        "lastReconciledDuration": "454.184541ms",
+        "lastReconciledStatus": "ReconciliationSucceeded",
+        "metadata": {
+          "revision": "main@sha1:5746a6d249af1cb220ff6cc44d68861162f69473"
+        },
+        "totalReconciliations": 1
+      },
+      {
+        "digest": "sha256:e30a7c9dcaa56948b8ce67c5a12301eb945e0a15ea38145f894f65ba1bec8e6f",
+        "firstReconciled": "2025-12-18T11:48:19Z",
+        "lastReconciled": "2025-12-18T11:54:55Z",
+        "lastReconciledDuration": "573.538458ms",
+        "lastReconciledStatus": "ReconciliationSucceeded",
+        "metadata": {
+          "revision": "main@sha1:85a1b51569bb129ad5632dd306567c031b427e97"
+        },
+        "totalReconciliations": 3
+      }
+    ],
+    "inventory": {
+      "entries": [
+        {
+          "id": "_alerts.notification.toolkit.fluxcd.io_apiextensions.k8s.io_CustomResourceDefinition",
+          "v": "v1"
+        },
+        {
+          "id": "_buckets.source.toolkit.fluxcd.io_apiextensions.k8s.io_CustomResourceDefinition",
+          "v": "v1"
+        },
+        {
+          "id": "_externalartifacts.source.toolkit.fluxcd.io_apiextensions.k8s.io_CustomResourceDefinition",
+          "v": "v1"
+        },
+        {
+          "id": "_gitrepositories.source.toolkit.fluxcd.io_apiextensions.k8s.io_CustomResourceDefinition",
+          "v": "v1"
+        },
+        {
+          "id": "_helmcharts.source.toolkit.fluxcd.io_apiextensions.k8s.io_CustomResourceDefinition",
+          "v": "v1"
+        },
+        {
+          "id": "_helmreleases.helm.toolkit.fluxcd.io_apiextensions.k8s.io_CustomResourceDefinition",
+          "v": "v1"
+        },
+        {
+          "id": "_helmrepositories.source.toolkit.fluxcd.io_apiextensions.k8s.io_CustomResourceDefinition",
+          "v": "v1"
+        },
+        {
+          "id": "_kustomizations.kustomize.toolkit.fluxcd.io_apiextensions.k8s.io_CustomResourceDefinition",
+          "v": "v1"
+        },
+        {
+          "id": "_ocirepositories.source.toolkit.fluxcd.io_apiextensions.k8s.io_CustomResourceDefinition",
+          "v": "v1"
+        },
+        {
+          "id": "_providers.notification.toolkit.fluxcd.io_apiextensions.k8s.io_CustomResourceDefinition",
+          "v": "v1"
+        },
+        {
+          "id": "_receivers.notification.toolkit.fluxcd.io_apiextensions.k8s.io_CustomResourceDefinition",
+          "v": "v1"
+        },
+        {
+          "id": "_flux-system__Namespace",
+          "v": "v1"
+        },
+        {
+          "id": "_production__Namespace",
+          "v": "v1"
+        },
+        {
+          "id": "_staging__Namespace",
+          "v": "v1"
+        },
+        {
+          "id": "_crd-controller-flux-system_rbac.authorization.k8s.io_ClusterRole",
+          "v": "v1"
+        },
+        {
+          "id": "_flux-edit-flux-system_rbac.authorization.k8s.io_ClusterRole",
+          "v": "v1"
+        },
+        {
+          "id": "_flux-view-flux-system_rbac.authorization.k8s.io_ClusterRole",
+          "v": "v1"
+        },
+        {
+          "id": "_cluster-reconciler-flux-system_rbac.authorization.k8s.io_ClusterRoleBinding",
+          "v": "v1"
+        },
+        {
+          "id": "_crd-controller-flux-system_rbac.authorization.k8s.io_ClusterRoleBinding",
+          "v": "v1"
+        },
+        {
+          "id": "flux-system_critical-pods-flux-system__ResourceQuota",
+          "v": "v1"
+        },
+        {
+          "id": "flux-system_helm-controller__ServiceAccount",
+          "v": "v1"
+        },
+        {
+          "id": "flux-system_kustomize-controller__ServiceAccount",
+          "v": "v1"
+        },
+        {
+          "id": "flux-system_notification-controller__ServiceAccount",
+          "v": "v1"
+        },
+        {
+          "id": "flux-system_source-controller__ServiceAccount",
+          "v": "v1"
+        },
+        {
+          "id": "flux-system_notification-controller__Service",
+          "v": "v1"
+        },
+        {
+          "id": "flux-system_source-controller__Service",
+          "v": "v1"
+        },
+        {
+          "id": "flux-system_webhook-receiver__Service",
+          "v": "v1"
+        },
+        {
+          "id": "flux-system_helm-controller_apps_Deployment",
+          "v": "v1"
+        },
+        {
+          "id": "flux-system_kustomize-controller_apps_Deployment",
+          "v": "v1"
+        },
+        {
+          "id": "flux-system_notification-controller_apps_Deployment",
+          "v": "v1"
+        },
+        {
+          "id": "flux-system_source-controller_apps_Deployment",
+          "v": "v1"
+        },
+        {
+          "id": "flux-system_flux-system_kustomize.toolkit.fluxcd.io_Kustomization",
+          "v": "v1"
+        },
+        {
+          "id": "flux-system_production_kustomize.toolkit.fluxcd.io_Kustomization",
+          "v": "v1"
+        },
+        {
+          "id": "flux-system_staging_kustomize.toolkit.fluxcd.io_Kustomization",
+          "v": "v1"
+        },
+        {
+          "id": "flux-system_allow-egress_networking.k8s.io_NetworkPolicy",
+          "v": "v1"
+        },
+        {
+          "id": "flux-system_allow-scraping_networking.k8s.io_NetworkPolicy",
+          "v": "v1"
+        },
+        {
+          "id": "flux-system_allow-webhooks_networking.k8s.io_NetworkPolicy",
+          "v": "v1"
+        },
+        {
+          "id": "flux-system_flux-system_source.toolkit.fluxcd.io_GitRepository",
+          "v": "v1"
+        }
+      ]
+    },
+    "lastAppliedRevision": "main@sha1:5746a6d249af1cb220ff6cc44d68861162f69473",
+    "lastAttemptedRevision": "main@sha1:1ab483f557253e3ba5a20ab9d1a57cd5c8e34968",
+    "lastHandledReconcileAt": "2025-12-18T14:36:30.182239+02:00",
+    "observedGeneration": 1
+  }
+}
+{
+  "apiVersion": "kustomize.toolkit.fluxcd.io/v1",
+  "kind": "Kustomization",
+  "metadata": {
+    "creationTimestamp": "2025-12-18T13:27:24Z",
+    "deletionGracePeriodSeconds": 0,
+    "deletionTimestamp": "2025-12-18T13:29:55Z",
+    "finalizers": [],
+    "generation": 2,
+    "name": "production",
+    "namespace": "flux-system",
+    "resourceVersion": "11914",
+    "uid": "be42b98f-2508-4996-b0b9-595772760dc0"
+  },
+  "spec": {
+    "force": false,
+    "interval": "1m",
+    "path": "./clusters/my-cluster/overlays/production",
+    "prune": true,
+    "sourceRef": {
+      "kind": "GitRepository",
+      "name": "flux-system"
+    }
+  },
+  "status": {
+    "observedGeneration": -1
+  }
+}
+{
+  "apiVersion": "kustomize.toolkit.fluxcd.io/v1",
+  "kind": "Kustomization",
+  "metadata": {
+    "creationTimestamp": "2025-12-18T13:24:25Z",
+    "deletionGracePeriodSeconds": 0,
+    "deletionTimestamp": "2025-12-18T13:29:55Z",
+    "finalizers": [],
+    "generation": 3,
+    "name": "staging",
+    "namespace": "flux-system",
+    "resourceVersion": "11915",
+    "uid": "a0e41f99-05d4-4840-8dd2-69b64047862d"
+  },
+  "spec": {
+    "force": false,
+    "interval": "1m",
+    "path": "./clusters/my-cluster/overlays/staging",
+    "prune": true,
+    "sourceRef": {
+      "kind": "GitRepository",
+      "name": "flux-system"
+    }
+  },
+  "status": {
+    "observedGeneration": -1
+  }
+}

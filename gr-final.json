@@ -1,0 +1,59 @@
+{
+  "apiVersion": "source.toolkit.fluxcd.io/v1",
+  "kind": "GitRepository",
+  "metadata": {
+    "annotations": {
+      "reconcile.fluxcd.io/requestedAt": "2025-12-18T15:17:32.02079+02:00"
+    },
+    "creationTimestamp": "2025-12-18T13:17:06Z",
+    "deletionGracePeriodSeconds": 0,
+    "deletionTimestamp": "2025-12-18T13:29:55Z",
+    "finalizers": [],
+    "generation": 3,
+    "name": "flux-system",
+    "namespace": "flux-system",
+    "resourceVersion": "11899",
+    "uid": "4650c351-94e2-4a8a-a721-2c822479f729"
+  },
+  "spec": {
+    "interval": "1m0s",
+    "ref": {
+      "branch": "main"
+    },
+    "secretRef": {
+      "name": "flux-system"
+    },
+    "timeout": "60s",
+    "url": "ssh://git@github.com/bperhun/n8n-fluxcd"
+  },
+  "status": {
+    "artifact": {
+      "digest": "sha256:340181423040227e2a4891f2a84def1028710c4c19d8e626df782d76efb832ac",
+      "lastUpdateTime": "2025-12-18T13:17:08Z",
+      "path": "gitrepository/flux-system/flux-system/1ab483f557253e3ba5a20ab9d1a57cd5c8e34968.tar.gz",
+      "revision": "main@sha1:1ab483f557253e3ba5a20ab9d1a57cd5c8e34968",
+      "size": 55629,
+      "url": "http://source-controller.flux-system.svc.cluster.local./gitrepository/flux-system/flux-system/1ab483f557253e3ba5a20ab9d1a57cd5c8e34968.tar.gz"
+    },
+    "conditions": [
+      {
+        "lastTransitionTime": "2025-12-18T13:17:08Z",
+        "message": "stored artifact for revision 'main@sha1:1ab483f557253e3ba5a20ab9d1a57cd5c8e34968'",
+        "observedGeneration": 1,
+        "reason": "Succeeded",
+        "status": "True",
+        "type": "Ready"
+      },
+      {
+        "lastTransitionTime": "2025-12-18T13:17:08Z",
+        "message": "stored artifact for revision 'main@sha1:1ab483f557253e3ba5a20ab9d1a57cd5c8e34968'",
+        "observedGeneration": 1,
+        "reason": "Succeeded",
+        "status": "True",
+        "type": "ArtifactInStorage"
+      }
+    ],
+    "lastHandledReconcileAt": "2025-12-18T15:17:32.02079+02:00",
+    "observedGeneration": 1
+  }
+}
