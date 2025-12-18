@@ -1,0 +1,17 @@
+apiVersion: source.toolkit.fluxcd.io/v1beta3
+kind: HelmRepository
+metadata:
+  name: cnpg
+  namespace: flux-system
+spec:
+  interval: 10m
+  url: https://cloudnative-pg.github.io/charts
+---
+apiVersion: source.toolkit.fluxcd.io/v1beta3
+kind: HelmRepository
+metadata:
+  name: n8n
+  namespace: flux-system
+spec:
+  interval: 10m
+  url: https://8gears.github.io/n8n-helm-chart
