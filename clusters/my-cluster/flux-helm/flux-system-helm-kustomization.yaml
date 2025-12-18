@@ -5,7 +5,7 @@ metadata:
   namespace: flux-system
 spec:
   interval: 1m
-  path: ./clusters/my-cluster/flux-system/helm
+  path: ./clusters/my-cluster/flux-helm
   prune: true
   sourceRef:
     kind: GitRepository
