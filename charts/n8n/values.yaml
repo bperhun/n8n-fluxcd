@@ -1,0 +1,27 @@
+replicaCount: 1
+
+image:
+  repository: n8nio/n8n
+  tag: latest
+
+service:
+  type: ClusterIP
+  port: 5678
+
+ingress:
+  enabled: true
+  ingressClassName: traefik
+  hostname: n8n.local
+  path: /
+
+env:
+  - name: DB_TYPE
+    value: postgres
+  - name: DB_POSTGRES_HOST
+    value: localhost
+  - name: DB_POSTGRES_DB
+    value: n8n
+  - name: DB_POSTGRES_USER
+    value: n8n
+  - name: DB_POSTGRES_PASSWORD
+    value: n8npass

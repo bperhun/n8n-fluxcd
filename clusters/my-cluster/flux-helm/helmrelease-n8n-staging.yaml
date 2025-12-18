@@ -6,11 +6,10 @@ metadata:
 spec:
   chart:
     spec:
-      chart: n8n
-      version: 0.1.0
+      chart: ./charts/n8n
       sourceRef:
-        kind: HelmRepository
-        name: n8n-charts
+        kind: GitRepository
+        name: flux-system
         namespace: flux-system
   interval: 1m
   values:
