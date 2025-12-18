@@ -1,0 +1,36 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"743b0734-9dcc-4e44-b65b-3f8139103222\" name=\"Changes\" comment=\"\">\n      <change afterPath=\"$PROJECT_DIR$/clusters/my-cluster/flux-helm/helmrelease-n8n-production.yaml\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/clusters/my-cluster/flux-helm/helmrelease-n8n-staging.yaml\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/clusters/my-cluster/overlays/production/ingress.yaml\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/clusters/my-cluster/overlays/staging/ingress.yaml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/clusters/my-cluster/flux-helm/helmrelease-cloudnative-pg.yaml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/clusters/my-cluster/flux-helm/helmrelease-cloudnative-pg.yaml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/clusters/my-cluster/flux-helm/helmrepo-cloudnative-pg.yaml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/clusters/my-cluster/flux-helm/helmrepo-cloudnative-pg.yaml\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"ComposerSettings\">\n    <execution />\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"GitHubPullRequestSearchHistory\">{\n  &quot;lastFilter&quot;: {\n    &quot;state&quot;: &quot;OPEN&quot;,\n    &quot;assignee&quot;: &quot;bperhun&quot;\n  }\n}</component>\n  <component name=\"GithubPullRequestsUISettings\">{\n  &quot;selectedUrlAndAccountId&quot;: {\n    &quot;url&quot;: &quot;https://github.com/bperhun/n8n-fluxcd.git&quot;,\n    &quot;accountId&quot;: &quot;5e55c1d7-1ac0-44ba-ac3d-f90944d9cc07&quot;\n  }\n}</component>\n  <component name=\"PhpWorkspaceProjectConfiguration\" interpreter_name=\"PHP\" />\n  <component name=\"ProjectColorInfo\">{\n  &quot;associatedIndex&quot;: 8\n}</component>\n  <component name=\"ProjectId\" id=\"370wgTEGajQ6unwXId0GzvNnURr\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\"><![CDATA[{\n  \"keyToString\": {\n    \"RunOnceActivity.git.unshallow\": \"true\",\n    \"git-widget-placeholder\": \"main\",\n    \"node.js.detected.package.eslint\": \"true\",\n    \"node.js.detected.package.tslint\": \"true\",\n    \"node.js.selected.package.eslint\": \"(autodetect)\",\n    \"node.js.selected.package.tslint\": \"(autodetect)\",\n    \"nodejs_package_manager_path\": \"npm\",\n    \"vue.rearranger.settings.migration\": \"true\"\n  }\n}]]></component>\n  <component name=\"RecentsManager\">\n    <key name=\"MoveFile.RECENT_KEYS\">\n      <recent name=\"$PROJECT_DIR$/clusters/my-cluster/overlays\" />\n      <recent name=\"$PROJECT_DIR$/clusters/my-cluster/flux-helm\" />\n      <recent name=\"$PROJECT_DIR$/clusters/my-cluster/flux-system/helm\" />\n      <recent name=\"$PROJECT_DIR$/clusters/my-cluster/infrastructure\" />\n    </key>\n  </component>\n  <component name=\"SharedIndexes\">\n    <attachedChunks>\n      <set>\n        <option value=\"bundled-js-predefined-d6986cc7102b-f27c65a3e318-JavaScript-PS-251.23774.436\" />\n        <option value=\"bundled-php-predefined-a98d8de5180a-aaeaa8632555-com.jetbrains.php.sharedIndexes-PS-251.23774.436\" />\n      </set>\n    </attachedChunks>\n  </component>\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"743b0734-9dcc-4e44-b65b-3f8139103222\" name=\"Changes\" comment=\"\" />\n      <created>1766053407970</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1766053407970</updated>\n      <workItem from=\"1766053409723\" duration=\"1804000\" />\n      <workItem from=\"1766055570848\" duration=\"12700000\" />\n    </task>\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 9c1288de1e6ffcaaa14de912ed5d451caceb7dcd)
++++ b/.idea/workspace.xml	(date 1766068654167)
+@@ -4,15 +4,7 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="743b0734-9dcc-4e44-b65b-3f8139103222" name="Changes" comment="">
+-      <change afterPath="$PROJECT_DIR$/clusters/my-cluster/flux-helm/helmrelease-n8n-production.yaml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/clusters/my-cluster/flux-helm/helmrelease-n8n-staging.yaml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/clusters/my-cluster/overlays/production/ingress.yaml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/clusters/my-cluster/overlays/staging/ingress.yaml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/clusters/my-cluster/flux-helm/helmrelease-cloudnative-pg.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/clusters/my-cluster/flux-helm/helmrelease-cloudnative-pg.yaml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/clusters/my-cluster/flux-helm/helmrepo-cloudnative-pg.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/clusters/my-cluster/flux-helm/helmrepo-cloudnative-pg.yaml" afterDir="false" />
+-    </list>
++    <list default="true" id="743b0734-9dcc-4e44-b65b-3f8139103222" name="Changes" comment="" />
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -81,7 +73,7 @@
+       <option name="presentableId" value="Default" />
+       <updated>1766053407970</updated>
+       <workItem from="1766053409723" duration="1804000" />
+-      <workItem from="1766055570848" duration="12700000" />
++      <workItem from="1766055570848" duration="13029000" />
+     </task>
+     <servers />
+   </component>
