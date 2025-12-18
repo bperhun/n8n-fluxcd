@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="743b0734-9dcc-4e44-b65b-3f8139103222" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/clusters/my-cluster/infrastructure/kustomization.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clusters/my-cluster/cnpg-operator/kustomization.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/clusters/my-cluster/cnpg-operator/kustomization.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clusters/my-cluster/flux-system/kustomization.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/clusters/my-cluster/flux-system/kustomization.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +68,7 @@
       <option name="presentableId" value="Default" />
       <updated>1766053407970</updated>
       <workItem from="1766053409723" duration="1804000" />
-      <workItem from="1766055570848" duration="1616000" />
+      <workItem from="1766055570848" duration="1832000" />
     </task>
     <servers />
   </component>
