@@ -7,10 +7,10 @@ spec:
   chart:
     spec:
       chart: n8n
-      version: 0.0.3
+      version: 0.1.0
       sourceRef:
         kind: HelmRepository
-        name: bitnami
+        name: n8n-charts
         namespace: flux-system
   interval: 1m
   values:
@@ -18,8 +18,24 @@ spec:
     image:
       repository: n8nio/n8n
       tag: latest
-    database:
-      host: cloudnative-pg.production.svc.cluster.local
-      port: 5432
-      user: n8n
-      password: n8npass
+    env:
+      - name: DB_TYPE
+        value: postgres
+      - name: DB_POSTGRES_HOST
+        value: n8n-prod-db-rw.production.svc.cluster.local
+      - name: DB_POSTGRES_DB
+        value: n8n
+      - name: DB_POSTGRES_USER
+        value: n8n
+      - name: DB_POSTGRES_PASSWORD
+        value: n8npass
+    ingress:
+      enabled: true
+      ingressClassName: traefik
+      hostname: n8n.production.127.0.0.1.sslip.io
+      path: /
+    autoscaling:
+      enabled: true
+      minReplicas: 2
+      maxReplicas: 5
+      targetCPUUtilizationPercentage: 70
