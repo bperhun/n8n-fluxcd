@@ -10,3 +10,9 @@ spec:
   sourceRef:
     kind: GitRepository
     name: flux-system
+  resources:
+    - helmrepo-bitnami.yaml
+    - helmrepo-cloudnative-pg.yaml
+    - helmrelease-cloudnative-pg.yaml
+    - helmrelease-n8n-staging.yaml
+    - helmrelease-n8n-production.yaml
